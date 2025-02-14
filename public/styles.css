@@ -1,6 +1,11 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     background-color:blanchedalmond;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    flex-flow: column;
 }
 h1{
     display:block;
@@ -14,26 +19,28 @@ h2{
 h3{
     text-decoration:underline;
 }
+.copyright{
+    font-size: x-small;
+}
 .centered{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
     max-width: 800px;
 }
 #instruction-box{
-    display: flex;
-    align-items: center;
+    align-self: center;
     padding:1%;
-    max-width: 600px;
+    max-width: 800px;
     border-color: black;
     border-style: solid;
 }
 .the-text{
+    align-self: center;
     margin: 0px,20px;
     max-width: 800px;
     padding: 0em,1em;
 }
 .random-text{
+    align-self: center;
     border-style:solid;
 }
 div{
@@ -48,11 +55,18 @@ p{
 }
 
 #timing-box{
+    gap: 22px;
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
 .count-down{
+    font-size: 48px;
+}
+
+#timing-box>*{
+    padding: 0 1em;
+    margin: 0 48px;
 }
 
 #start-button{
